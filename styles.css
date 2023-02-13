@@ -1,0 +1,57 @@
+
+
+html, body {
+  margin:0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display:flex;
+  justify-content: space-between;
+  background-color:rgb(226, 225, 225);
+}
+
+ul {
+  
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+  list-style: none;
+}
+
+.container {
+  display:grid;
+  /*                  |he   |wav  |work |proj |wav  |con  |co-l  */
+  grid-template-rows: 500px 330px 240px 800px 330px 240px 430px 80px;
+}
+
+.hero {
+  background-color:white;
+}
+
+.wave-container {
+  background-color:aquamarine;
+}
+
+.works {
+  background-color: antiquewhite;
+}
+
+.projects {
+  background-color:bisque
+}
+
+.contact {
+  background-color: pink;
+}
+
+.contact-links {
+  background-color:rgb(234, 155, 193);
+}
+
+.footer {
+  background-color:rgb(170, 67, 84);
+}
+
+
