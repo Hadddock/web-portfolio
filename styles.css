@@ -1,37 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela&family=Varela+Round&display=swap');
 
+html,
+body {
+  margin: 0;
 
-html, body {
-  margin:0;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 header {
   position: sticky;
   top: 0;
-  display:flex;
+  display: flex;
   justify-content: space-between;
-  background-color:rgb(226, 225, 225);
+  background-color: rgb(226, 225, 225);
+
 }
 
 ul {
-  
-  display:flex;
-  justify-content:space-between;
-  gap:10px;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
   list-style: none;
 }
 
 .container {
-  display:grid;
+  display: grid;
   /*                  |he   |wav  |work |proj |wav  |con  |co-l  */
   grid-template-rows: 500px 330px 240px 800px 330px 240px 430px 80px;
 }
 
 .hero {
-  background-color:white;
+  font-family: 'Varela', sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: center;
+  gap: 10px;
+  background-color: white;
+}
+
+.hero-text {
+  font-size: 3em;
+  font-weight:bold;
+}
+
+.hero-subtext {
+  font-size: 2em;
 }
 
 .wave-container {
-  background-color:aquamarine;
+  background-color: aquamarine;
 }
 
 .works {
@@ -39,7 +66,7 @@ ul {
 }
 
 .projects {
-  background-color:bisque
+  background-color: bisque
 }
 
 .contact {
@@ -47,11 +74,9 @@ ul {
 }
 
 .contact-links {
-  background-color:rgb(234, 155, 193);
+  background-color: rgb(234, 155, 193);
 }
 
 .footer {
-  background-color:rgb(170, 67, 84);
+  background-color: rgb(170, 67, 84);
 }
-
-
