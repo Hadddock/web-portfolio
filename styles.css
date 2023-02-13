@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela&family=Varela+Round&display=swap');
 
 :root {
-  --wave-one-color: rgb(249, 239, 239);
-  --wave-two-color: rgb(244, 233, 221);
-  --wave-three-color: rgb(246, 229, 208);
-  --wave-four-color: antiquewhite;
+  --wave-one-color: rgba(249, 243, 230, 0.456);
+  --wave-two-color: rgba(237, 229, 210, 0.5);
+  --wave-three-color: rgba(244, 231, 197, 0.7);
+  --wave-four-color: rgba(255,252,245,1);
 
+  --hero-background-color: rgb(253, 253, 253);
+  
   --header-background-color: rgb(210, 210, 210);
-  --works-background-color: antiquewhite;
+  --works-background-color: rgb(252, 246, 233);
   --contact-background-color: pink;
   --white: #ffffff;
 }
@@ -31,6 +33,7 @@ body::-webkit-scrollbar {
 
 
 header {
+  z-index:1;
   height:60px;
   position: sticky;
   top: 0;
@@ -56,7 +59,8 @@ a {
 .container {
   display: grid;
   /*                  |he   |wav  |work |proj |wav  |con  |co-l  */
-  grid-template-rows: 500px 330px 240px 800px 330px 240px 430px 80px;
+  grid-template-rows: 550px 200px 240px 800px 330px 240px 430px 80px;
+
 }
 
 .hero {
@@ -67,7 +71,8 @@ a {
   align-self: center;
   justify-self: center;
   gap: 10px;
-  background-color: white;
+  background-color: transparent;
+  
 }
 
 .hero-text {
@@ -80,11 +85,16 @@ a {
 }
 
 .wave-container {
-  z-index:-1;
+  background-color: transparent;
 }
 
 .waves {
+
   position:relative;
+  min-height:100px;
+  max-height:200px;
+  width: 100%;
+  
   margin-bottom:-7px; /*Fix for safari gap*/
 }
 
@@ -101,7 +111,7 @@ a {
 }
 
 #wave-four {
-  fill: var(--wave-four-color);
+  fill: var(--works-background-color);
 }
 
 .parallax > use {
