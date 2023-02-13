@@ -8,19 +8,23 @@ body {
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
+  font-family: 'Varela Round', sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
 }
 
 body::-webkit-scrollbar {
   display: none;
 }
 
+
 header {
+  height:60px;
   position: sticky;
   top: 0;
   display: flex;
   justify-content: space-between;
   background-color: rgb(226, 225, 225);
-
 }
 
 ul {
@@ -29,6 +33,12 @@ ul {
   justify-content: space-between;
   gap: 10px;
   list-style: none;
+}
+
+a {
+  
+  color: black;
+  text-decoration:none;
 }
 
 .container {
