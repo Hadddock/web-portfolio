@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="styles.css">
 
 </head>
+
 <body>
     <header>
         <ul class="external-links">
@@ -27,9 +29,9 @@
                 </a>
             </li>
         </ul>
-        
+
         <ul class="internal-links">
-            <li class="li"><a href="#top" >Home</a></li>
+            <li class="li"><a href="#top">Home</a></li>
             <li class="li"><a href="#works">Works</a></li>
             <li class="li"><a href="#contact">Contact</a></li>
         </ul>
@@ -40,18 +42,30 @@
             <div class="hero-text">
                 Justin Haddock
             </div>
-            
+
             <div class="hero-subtext">
                 Software Engineer • Web Developer
             </div>
         </div>
 
         <div class="wave-container">
-            Picture Waves
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" id="wave-one"/>
+                    <use xlink:href="#gentle-wave" x="48" y="3" id="wave-two" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" id="wave-three" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" id="wave-four" />
+                </g>
+            </svg>
         </div>
 
         <div class="works" id="works">
-            works
+            Works
         </div>
 
         <div class="projects">
