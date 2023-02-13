@@ -89,6 +89,19 @@ a {
 .wave-container {
   background-color: transparent;
   align-self: end;
+  
+}
+
+#wave-container-two {
+  align-self:start;
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  grid-area: 5 /1 / 6 /2;
+}
+
+.wave-container-two-background {
+  grid-area: 5 /1 / 6 /2;
+  background-color:pink;
 }
 
 .waves {
@@ -168,15 +181,17 @@ a {
 }
 
 .cards {
-
+  list-style-type: none;
+  padding:10px;
   display: flex;
   flex-wrap:wrap;
   justify-content:center;
   align-items: center;
-  gap:20px;
+  gap:25px;
 }
 
 .card {
+
   justify-content: center;
   box-sizing: border-box;
   justify-self: center;
@@ -193,7 +208,7 @@ a {
   grid-template-rows: 1fr 1fr 3fr 2fr;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 20px 10px 50px 0px rgba(20, 20, 20, 0.4);
+  
 
 }
 
@@ -203,7 +218,15 @@ a {
 
 .card-body {
   grid-area: 3/ 1/ 4/3;
+  font-size:1.3em;
+}
 
+.card-title {
+  font-size:2em;
+}
+
+.card-description {
+  font-size:1.6em;
 }
 
 .links {
@@ -223,7 +246,6 @@ a {
 
 .link-icon {
   max-height: 75px;
-
 }
 
 .contact {
