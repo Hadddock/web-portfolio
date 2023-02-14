@@ -448,6 +448,10 @@ button {
     
   }
 
+  .contact-links {
+    padding-bottom:50px;
+  }
+
 
   .links {
     display:none;
