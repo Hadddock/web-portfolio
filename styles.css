@@ -340,7 +340,6 @@ a {
 
 .contact-link > img:hover{
   transition: all 0.4s ease-out;
-  
   filter: brightness(95%);
 }
 
@@ -463,4 +462,10 @@ hr {
     flex-direction: column;
   }
   
+}
+
+@media (hover: none) {
+  .contact-link > img:hover{
+    filter: brightness(0%);
+  }
 }
