@@ -80,7 +80,7 @@ a {
 .container {
   display: grid;
   /*                  |he   |wav  |work |proj |wav  |con  |co-l  */
-  grid-template-rows: 550px 200px 100px 1fr 330px 25px 505px 80px;
+  grid-template-rows: 550px 200px 100px 1fr 330px 25px 705px 80px;
 
 }
 
@@ -334,6 +334,8 @@ a {
   gap: 10px;
   justify-content: start;
   white-space:nowrap;
+  text-decoration:underline;
+
 }
 
 .contact-link>img {
@@ -365,15 +367,17 @@ hr {
 
 }
 
+
 @media screen and (max-width:700px) {
 
   .container {
     /*                  |he   |wav  |work |proj |wav  |con  |co-l  */
-    grid-template-rows: 330px 50px 100px 1fr 90px 100px 405px 50px;
+    grid-template-rows: 330px 50px 100px 1fr 90px 100px 605px 50px;
   
   }
   .contact-link {
-    justify-content: center
+    justify-content: center;
+    
   }
 
 
@@ -429,8 +433,7 @@ hr {
   }
   .contact-link {
     justify-content: start;
-    font-size:1.2em;
-  
+    font-size:1.3em;
   }
 
   .contact-link img {
@@ -450,4 +453,19 @@ hr {
     overflow-y: hidden
   }
 
+}
+
+@media screen and (max-width:300px) {
+  .contact-link {
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    white-space:nowrap;
+    text-decoration:underline;
+  
+  }
+  
 }
