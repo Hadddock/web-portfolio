@@ -204,10 +204,11 @@ a {
 
 
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 1fr 3fr 2fr;
+  grid-template-columns: .5fr 3fr;
+  grid-template-rows: .75fr .75fr 3fr 2fr;
   padding: 20px;
   border-radius: 5px;
+  gap:10px;
 }
 
 .card-icon {
@@ -229,21 +230,35 @@ a {
 
 .links {
   grid-area: 4/ 1/ 5/3;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items:center;
+  align-items:center;
   gap: 10px;
 }
 
 .card-link {
+  padding:0px 50px 0px 50px;
   display: flex;
-  justify-content: space-around;
+  justify-self: start;
   gap: 10px;
   align-items: center;
   white-space: nowrap;
 }
 
+.card-icon {
+  max-width:80px;
+  align-self:center;
+  justify-self:center;
+}
+
+
 .link-icon {
   max-height: 75px;
+}
+
+.link-text {
+  font-size:1.3em;
 }
 
 .contact {
