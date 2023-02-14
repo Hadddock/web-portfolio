@@ -9,7 +9,7 @@
   --hero-background-color: rgb(253, 253, 253);
 
   --header-background-color: rgb(210, 210, 210);
-  --works-background-color: rgb(252, 246, 233);
+  --works-background-color: rgb(255, 248, 231);
   --contact-background-color: pink;
   --white: #ffffff;
 }
@@ -80,7 +80,7 @@ a {
 .container {
   display: grid;
   /*                  |he   |wav  |work |proj |wav  |con  |co-l  */
-  grid-template-rows: 550px 200px 100px 1fr 330px 25px 645px 80px;
+  grid-template-rows: 550px 200px 100px 1fr 330px 25px 505px 80px;
 
 }
 
@@ -203,6 +203,8 @@ a {
 
 .projects {
   background-color: var(--works-background-color);
+  padding-top:20px;
+  padding-bottom:20px;
 }
 
 .cards {
@@ -233,8 +235,21 @@ a {
   grid-template-columns: .75fr 3fr 3fr;
   grid-template-rows: .75fr .75fr 3fr 1fr;
   padding: 20px;
-  border-radius: 10px;
+  
   column-gap: 20px;
+  background: rgba(255, 255, 255, 0.78);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.3px);
+  -webkit-backdrop-filter: blur(6.3px);
+  border: 1px solid rgba(255, 255, 255, 0.47);
+  transition: all 0.3s ease-out;
+}
+
+.card:hover {
+  transform: translateY(-3px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0,0,0,0.11),
+    0 24px 46px var(--box-shadow-color);
 }
 
 .card-icon {
@@ -343,6 +358,13 @@ hr {
   padding: 0;
 }
 
+@media screen and (max-height:550px) and (orientation: landscape){
+  header {
+    display:none;
+  }
+
+}
+
 @media screen and (max-width:700px) {
 
   .container {
@@ -381,6 +403,7 @@ hr {
   .card {
     min-width:300px;
     grid-template-rows: .75fr .1fr 3fr 1fr;
+   
   }
   
   .card-icon {
