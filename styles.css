@@ -293,6 +293,7 @@ a {
 .link-text {
   font-size: 1.3em;
   text-decoration: underline
+
 }
 
 .contact {
@@ -316,7 +317,8 @@ a {
   display: flex;
   align-items: center;
   gap: 10px;
-  justify-content: start
+  justify-content: start;
+  white-space:nowrap;
 }
 
 .contact-link>img {
