@@ -22,6 +22,7 @@ body {
   font-family: 'Varela Round', sans-serif;
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
+  background-image: linear-gradient(var(--hero-background-color), var(--contact-background-color));
 }
 
 
@@ -336,8 +337,6 @@ a {
   max-height: 105px;
   transition: all 0.4s ease-in;
   filter: brightness(0%);
-
-  
 }
 
 
