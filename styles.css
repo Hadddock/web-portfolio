@@ -22,7 +22,7 @@ body {
   font-family: 'Varela Round', sans-serif;
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
-  background-image: linear-gradient(var(--hero-background-color),var(--hero-background-color) var(--contact-background-color));
+  background-image: linear-gradient(var(--hero-background-color) 50%, var(--contact-background-color) 50%);
 }
 
 
