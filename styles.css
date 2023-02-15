@@ -22,7 +22,7 @@ body {
   font-family: 'Varela Round', sans-serif;
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
-  background-image: linear-gradient(var(--hero-background-color), var(--contact-background-color));
+  background-image: linear-gradient(var(--hero-background-color),var(--hero-background-color) var(--contact-background-color));
 }
 
 
@@ -231,20 +231,21 @@ a {
   column-gap: 20px;
   background: rgba(255, 255, 255, 0.78);
   border-radius: 16px;
-  box-shadow: 0 24px 36px rgba(0,0,0,0.11),
-  0 24px 46px var(--box-shadow-color);
+  
+  
   backdrop-filter: blur(6.3px);
   -webkit-backdrop-filter: blur(6.3px);
   border: 1px solid rgba(255, 255, 255, 0.47);
   transition: all 0.3s ease-out;
-  border:solid rgba(142, 142, 142, 0.333) .15em;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
 }
 
 .card:hover {
   transform: translateY(-3px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0,0,0,0.11),0 24px 46px var(--box-shadow-color);
 
-
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    
 }
 
 .card-icon {
