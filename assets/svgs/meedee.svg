@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="32" y1="0" x2="32" y2="64" id="gradient-0" gradientTransform="matrix(0.011922, -0.999929, 0.995426, 0.011869, -1.074918, 61.185034)">
+      <stop offset="0" style="stop-color: rgb(255, 157, 186);"/>
+      <stop offset="1" style="stop-color: rgb(175, 45, 97);"/>
+    </linearGradient>
+    <style>.cls-1{fill:url(#linear-gradient);}.cls-2{fill:none;stroke:#1d1d1b;stroke-miterlimit:10;stroke-width:0.5px;}</style>
+  </defs>
+  <g id="Background" style="">
+    <circle class="cls-1" cx="32" cy="32" r="32" style="fill: url(#gradient-0);"/>
+  </g>
+  <path d="M 44.31 43.992 L 44.31 14.378 C 44.31 13.011 43.613 11.573 41.51 11.573 C 39.922 11.573 39.282 12.326 38.584 13.832 L 31.707 29.226 L 31.644 29.226 L 24.706 13.832 C 24.006 12.326 23.37 11.573 21.777 11.573 C 19.677 11.573 18.976 13.011 18.976 14.378 L 18.976 43.992 C 18.976 45.295 19.932 46.046 21.077 46.046 C 22.095 46.046 23.24 45.295 23.24 43.992 L 23.24 20.468 L 23.305 20.468 L 29.607 34.288 C 30.053 35.246 30.626 35.796 31.644 35.796 C 32.662 35.796 33.235 35.246 33.681 34.288 L 39.982 20.468 L 40.047 20.468 L 40.047 43.992 C 40.047 45.295 41.191 46.046 42.211 46.046 C 43.357 46.046 44.31 45.295 44.31 43.992 Z" style="fill: rgb(255, 255, 255);"/>
+  <ellipse style="fill: rgb(255, 255, 255); stroke: rgb(255, 255, 255);" cx="47.11" cy="43.442" rx="6.575" ry="5.201"/>
+  <ellipse style="fill: rgb(255, 255, 255); stroke: rgb(255, 255, 255);" cx="16.163" cy="43.456" rx="6.575" ry="5.201"/>
+</svg>

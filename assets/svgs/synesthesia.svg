@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="32" y1="0" x2="32" y2="64" id="gradient-2" gradientTransform="matrix(0.003443, -0.999993, 0.993163, 0.003419, -0.00078, 61.757069)" spreadMethod="pad">
+      <stop offset="0" style="stop-color: rgb(188, 26, 120);"/>
+      <stop offset="1" style="stop-color: rgb(56, 0, 116);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="32" y1="0" x2="32" y2="64" id="gradient-0">
+      <stop offset="0" style="stop-color: #bada55"/>
+      <stop offset="1" style="stop-color: #758d29"/>
+    </linearGradient>
+    <style>.cls-1{fill:url(#linear-gradient);}.cls-2{fill:none;stroke:#1d1d1b;stroke-miterlimit:10;stroke-width:0.5px;}</style>
+  </defs>
+  <g id="Background" style="">
+    <circle class="cls-1" cx="32" cy="32" r="32" style="stroke-width: 0px; stroke: url(#gradient-0); fill: url(#gradient-2); paint-order: fill;"/>
+  </g>
+  <g id="g-2" transform="matrix(0.968598, 0, 0, 0.968598, 0.637591, -1.734648)" style="">
+    <path class="cls-2" d="M27,46.34a38.7,38.7,0,0,0-22.06,0" transform="translate(-0.23)" style="stroke: rgb(255, 255, 255); stroke-width: 2.06484px;"/>
+    <path class="cls-2" d="M28.25,46.82S15.52,47.21,6.5,50.5" transform="translate(-0.23)" style="stroke: rgb(255, 255, 255); stroke-width: 2.06484px;"/>
+    <path class="cls-2" d="M26.6,48.15A37.31,37.31,0,0,0,11.5,54.5" transform="translate(-0.23)" style="stroke: rgb(255, 255, 255); stroke-width: 2.06484px;"/>
+    <path class="cls-2" d="M38,46.34a35.14,35.14,0,0,1,21,0" transform="translate(-0.23)" style="stroke: rgb(255, 255, 255); stroke-width: 2.06484px;"/>
+    <path class="cls-2" d="M36.69,46.82s12.38.28,21.4,3.57" transform="translate(-0.23)" style="stroke: rgb(255, 255, 255); stroke-width: 2.06484px;"/>
+    <path class="cls-2" d="M 36.11 48.15 C 42.804 49.051 49.157 50.964 54.75 53.763" style="stroke: rgb(255, 255, 255); stroke-width: 2.06484px;"/>
+  </g>
+  <path d="M 12.664 12.412 C 12.664 11.251 13.596 10.328 14.726 10.328 L 14.768 10.328 C 15.441 10.328 16.059 10.65 16.457 11.188 L 24.393 21.864 C 24.988 22.665 25.939 23.145 26.933 23.145 L 36.456 23.145 C 37.45 23.145 38.4 22.665 38.997 21.864 L 46.936 11.188 C 47.332 10.65 47.97 10.328 48.623 10.328 L 48.663 10.328 C 49.814 10.328 50.725 11.272 50.725 12.412 L 50.725 35.962 C 50.725 46.575 42.192 55.184 31.675 55.184 C 21.158 55.184 12.626 46.575 12.626 35.962 L 12.626 12.412 L 12.664 12.412 Z M 23.778 39.166 C 26.223 39.166 27.752 36.495 26.527 34.359 C 25.96 33.368 24.913 32.757 23.778 32.757 C 21.335 32.757 19.806 35.426 21.028 37.562 C 21.595 38.553 22.642 39.166 23.778 39.166 Z M 42.829 35.962 C 42.829 33.497 40.18 31.953 38.065 33.185 C 37.083 33.758 36.477 34.814 36.477 35.962 C 36.477 38.427 39.124 39.967 41.239 38.735 C 42.224 38.162 42.829 37.105 42.829 35.962 Z" style="fill: rgb(255, 255, 255);"/>
+</svg>
