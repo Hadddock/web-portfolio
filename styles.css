@@ -253,6 +253,7 @@ hr {
   grid-area: 1 /1 / 3 / 2;
   min-width: 30px;
   max-width: 80px;
+  width: clamp(30px, 60px, 80px);
   width: 100%;
 
 }
