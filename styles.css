@@ -73,7 +73,7 @@ a {
 .container {
   display: grid;
   /*                  |he   |wav  |work |proj |wav  |con  |co-l  */
-  grid-template-rows: 550px 200px 100px 1fr 330px 25px 705px 80px;
+  grid-template-rows: 550px 200px 100px 1fr 330px 100px 705px 80px;
 
 }
 
@@ -232,7 +232,7 @@ a {
   background: rgba(255, 255, 255, 0.78);
   border-radius: 16px;
   
-  transform: translateY(-3px) scale(1.00) translateZ(0);
+  transform: translateY(-3px) ;
   backdrop-filter: blur(6.3px);
   -webkit-backdrop-filter: blur(6.3px);
   border: 1px solid rgba(255, 255, 255, 0.47);
@@ -259,6 +259,7 @@ a {
 .card-body {
   grid-area: 3/ 1/ 5/4;
   font-size: 1.3em;
+
 }
 
 .card-title {
@@ -322,7 +323,7 @@ a {
 }
 
 .contact-links {
-  padding: 0px;
+  padding-bottom: 50px;
   list-style-type: circle;
   height: 100%;
   background-color: var(--contact-background-color);
@@ -558,4 +559,5 @@ button {
   .contact-link > img:hover{
     filter: brightness(0%);
   }
+
 }
