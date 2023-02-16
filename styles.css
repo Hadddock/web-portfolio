@@ -10,7 +10,7 @@
 
   --header-background-color: rgb(210, 210, 210);
   --works-background-color: rgb(255, 248, 231);
-  --contact-background-color: pink;
+  --contact-background-color: rgb(253, 182, 194);
   --white: #ffffff;
 }
 
@@ -73,7 +73,7 @@ a {
 .container {
   display: grid;
   /*                  |he   |wav  |work |proj |wav  |con  |co-l  */
-  grid-template-rows: 550px 200px 100px 1fr 330px 100px 805px 80px;
+  grid-template-rows: 550px 200px 100px 1fr 330px 100px 805px 330px 80px;
 
 }
 
@@ -111,6 +111,7 @@ a {
 
 #wave-container-two {
   align-self: start;
+  background-color: var(--contact-background-color);
   -webkit-transform: scaleY(-1);
   transform: scaleY(-1);
   grid-area: 5 /1 / 6 /2;
@@ -575,6 +576,7 @@ button {
   .footer {
 
     font-size: 1em;
+    grid-area: -2 /1/-1/2;
   }
 
   .waves {
