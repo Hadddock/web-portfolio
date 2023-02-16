@@ -232,7 +232,7 @@ a {
   background: rgba(255, 255, 255, 0.78);
   border-radius: 16px;
   
-  transform: translateY(-3px) scale(1.005) translateZ(0);
+  transform: translateY(-3px) scale(1.00) translateZ(0);
   backdrop-filter: blur(6.3px);
   -webkit-backdrop-filter: blur(6.3px);
   border: 1px solid rgba(255, 255, 255, 0.47);
@@ -243,7 +243,6 @@ a {
 
 .card:hover {
   transform: none;
-  
   box-shadow: 0 24px 36px rgba(0,0,0,0.11),0 24px 46px var(--box-shadow-color);
 
     
@@ -258,7 +257,7 @@ a {
 }
 
 .card-body {
-  grid-area: 3/ 1/ 4/4;
+  grid-area: 3/ 1/ 5/4;
   font-size: 1.3em;
 }
 
@@ -293,6 +292,12 @@ a {
   align-items: center;
   white-space: nowrap;
   
+}
+
+.card-list {
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
 }
 
 .card-icon {
