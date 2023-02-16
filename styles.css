@@ -73,7 +73,7 @@ a {
 .container {
   display: grid;
   /*                  |he   |wav  |work |proj |wav  |con  |co-l  */
-  grid-template-rows: 550px 200px 100px 1fr 330px 100px 805px 330px 80px;
+  grid-template-rows: 550px 200px 100px 1fr 330px 100px 805px 160px 80px;
 
 }
 
@@ -573,10 +573,10 @@ button {
     width: 40px;
   }
 
-  .footer {
+  footer {
 
     font-size: 1em;
-    grid-area: -2 /1/-1/2;
+    grid-area: 9 /1/10/2;
   }
 
   .waves {
