@@ -530,6 +530,8 @@ button {
     justify-content: center;
     display: flex;
     white-space: normal;
+    font-weight:bold;
+   
 
 
   }
