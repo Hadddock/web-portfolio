@@ -319,6 +319,8 @@ hr {
 
 .card-icon {
   max-width: 80px;
+  width:80px;
+  height:80px;
   align-self: center;
   justify-self: center;
 }
@@ -326,6 +328,8 @@ hr {
 
 .link-icon {
   max-height: 75px;
+  height:75px;
+  width:75px;
 }
 
 .link-text {
@@ -368,9 +372,14 @@ hr {
 }
 
 .contact-link>img {
+  width:90px;
+  height:90px;
   max-height: 105px;
   transition: all 0.4s ease-in;
   filter: brightness(0%);
+}
+.contact-link > img::selection {
+  filter:brightness(100%);
 }
 
 
@@ -395,6 +404,11 @@ hr {
   border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0;
+}
+
+.ham > img {
+  width: 29px;
+  height:25px;
 }
 
 
@@ -451,6 +465,10 @@ hr {
 .dropdown img {
 
   height: 25px;
+}
+.header-icon {
+  width:45px;
+  height:45px;
 }
 
 button {
@@ -547,6 +565,12 @@ button {
     justify-content: center;
 
     border-radius: 5px;
+  }
+
+  .link-icon {
+      width:50px;
+      height:50px;
+      padding:5px;
   }
 
 
