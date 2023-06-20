@@ -1,153 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Justin Haddock | Software Portfolio</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
 
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#74ffa0">
-    <meta name="msapplication-TileColor" content="#00aba9">
-    <meta name="theme-color" content="#ce8ee0">
-    <meta name="description" content="The portfolio of Justin Haddock, Software Engineer and Web Developer">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#74ffa0" />
+    <meta name="msapplication-TileColor" content="#00aba9" />
+    <meta name="theme-color" content="#ce8ee0" />
+    <meta
+      name="description"
+      content="The portfolio of Justin Haddock, Software Engineer and Web Developer"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <ul class="external-links">
-            <li>
-                <a href="mailto:justin.haddock@outlook.com">
-                    <img src="assets/svgs/mail.svg" alt="Email" class="header-icon">
-                </a>
-            </li>
-            <li>
-                <a target="_blank" href="https://github.com/Hadddock">
-                    <img src="assets/svgs/github.svg" alt="GitHub" class="header-icon">
-                </a>
-            </li>
-            <li>
-                <a target="_blank" href="https://www.linkedin.com/in/justinhaddock/">
-                    <img src="assets/svgs/linkedin.svg" alt="LinkedIn" class="header-icon">
-                </a>
-            </li>
-        </ul>
+      <ul class="external-links">
+        <li>
+          <a href="mailto:justin.haddock@outlook.com">
+            <img src="assets/svgs/mail.svg" alt="Email" class="header-icon" />
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://github.com/Hadddock">
+            <img
+              src="assets/svgs/github.svg"
+              alt="GitHub"
+              class="header-icon"
+            />
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/justinhaddock/">
+            <img
+              src="assets/svgs/linkedin.svg"
+              alt="LinkedIn"
+              class="header-icon"
+            />
+          </a>
+        </li>
+      </ul>
 
-        <ul class="internal-links">
-            <li class="li"><a href="#top">Home</a></li>
-            <li class="li"><a href="#works">Works</a></li>
-            <li class="li"><a href="#contact">Contact</a></li>
-        </ul>
-
+      <ul class="internal-links">
+        <li class="li"><a href="#top">Home</a></li>
+        <li class="li"><a href="#works">Works</a></li>
+        <li class="li"><a href="#contact">Contact</a></li>
+      </ul>
     </header>
     <div class="dropdown">
-        <button class="ham">
-            <img src="assets/svgs/hamburger-menu.svg" alt="hamburger icon">
-        </button>
+      <button class="ham">
+        <img src="assets/svgs/hamburger-menu.svg" alt="hamburger icon" />
+      </button>
 
-        <ul class="nav-sub">
-            <li class="spacer">
-
-            </li>
-            <li class="list-item"><a href="#top" class="nav-link">Home</a></li>
-            <li class="list-item"><a href="#works" class="nav-link">Works</a></li>
-            <li class="list-item"><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
+      <ul class="nav-sub">
+        <li class="spacer"></li>
+        <li class="list-item"><a href="#top" class="nav-link">Home</a></li>
+        <li class="list-item"><a href="#works" class="nav-link">Works</a></li>
+        <li class="list-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
     </div>
 
     <div class="container">
-        <div class="hero" id="hero">
-            <div class="hero-text">
-                Justin Haddock
+      <div class="hero" id="hero">
+        <div class="hero-text">Justin Haddock</div>
+
+        <div class="hero-subtext">Software Engineer + Web&nbsp;Developer</div>
+      </div>
+
+      <div class="wave-container">
+        <svg
+          class="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shape-rendering="auto"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" id="wave-one" />
+            <use xlink:href="#gentle-wave" x="48" y="3" id="wave-two" />
+            <use xlink:href="#gentle-wave" x="48" y="5" id="wave-three" />
+            <use xlink:href="#gentle-wave" x="48" y="7" id="wave-four" />
+          </g>
+        </svg>
+      </div>
+
+      <div class="works" id="works">Works</div>
+
+      <div class="projects">
+        <ul class="cards">
+          <li class="card">
+            <img
+              src="assets/svgs/lange-studios.svg"
+              alt="Lange Studios Icon"
+              class="card-icon"
+            />
+            <div class="card-title">Lange&nbsp;Studios</div>
+            <div class="card-description">Recording Studio Website</div>
+            <hr />
+            <div class="card-body">
+              <div>
+                The Lange Studios website is a piece of freelance work done for
+                the titular recording studio in Puyallup, WA. The website
+                features interactive client audio samples, a guide to the
+                recording process, pricing information, contact information, a
+                list of all available equipment, a gallery of images & prior
+                video shoots from the recording studio, and an overview of the
+                studio's 40+ year history. The website was designed to be
+                responsive, asthetically pleasing, easy to navigate, and well
+                representative of the studio to potential clients.
+              </div>
+              <div>
+                Made With: React, JavaScript, Gatsby, Photoshop, & Illustrator
+              </div>
             </div>
-
-            <div class="hero-subtext">
-                Software Engineer + Web Developer
+            <div class="links">
+              <a
+                class="card-link"
+                target="_blank"
+                href="https://main--relaxed-croissant-ef71db.netlify.app/"
+              >
+                <img src="assets/svgs/website.svg" alt="" class="link-icon" />
+                <div class="link-text">Visit Website</div>
+              </a>
             </div>
-        </div>
+            <a
+              class="mobile-links website"
+              target="_blank"
+              href="https://main--relaxed-croissant-ef71db.netlify.app"
+            >
+              <div class="card-link">
+                <img src="assets/svgs/website.svg" alt="" class="link-icon" />
+                <div class="link-text">Visit Website</div>
+              </div>
+            </a>
+          </li>
+          <li class="card">
+            <img
+              src="assets/svgs/synesthesia.svg"
+              alt="Synesthesia Icon"
+              class="card-icon"
+            />
+            <div class="card-title">Synesthesia</div>
+            <div class="card-description">Music Platformer Game</div>
+            <hr />
+            <div class="card-body">
+              <div>
+                Synesthesia is an abstract cat platformer featuring a dynamic
+                audio system, syncing music with the player's movement in
+                real-time. Synesthesia's visuals are a mix of traditional pixel
+                art and PS1-inspired 3D backgrounds. Builds for HTML5, Windows,
+                & macOS are available for free on Itch.io.
+              </div>
+              <div>
+                Made With: Godot, GDScript, Photoshop, Illustrator, & Aseprite
+              </div>
+            </div>
+            <div class="links">
+              <a
+                class="card-link"
+                target="_blank"
+                href="https://breather-games.itch.io/synesthesia"
+              >
+                <img src="assets/svgs/itch-io.svg" alt="" class="link-icon" />
+                <div class="link-text">Play on Itch.io</div>
+              </a>
+            </div>
+            <a
+              class="mobile-links itch"
+              target="_blank"
+              href="https://breather-games.itch.io/synesthesia"
+            >
+              <div class="card-link">
+                <img src="assets/svgs/itch-io.svg" alt="" class="link-icon" />
+                <div class="link-text">View on Itch.io</div>
+              </div>
+            </a>
+          </li>
+          <li class="card">
+            <img
+              src="assets/svgs/reactivities.svg"
+              alt="Reactivities Icon"
+              class="card-icon"
+            />
+            <div class="card-title">Reactivities</div>
+            <div class="card-description">Social Media Web App</div>
+            <hr />
+            <div class="card-body">
+              <div>
+                Reactivities is a social media web application featuring user
+                login & registration, profile viewing & editing, image
+                uploading, real-time chatting, infinite scrolling, user
+                following, and a persistent integrated PostgreSQL database. An
+                active deployment of Reactivities is accessible from its GitHub
+                repository.
+              </div>
+              <div>
+                Made With: React, TypeScript, C#, .NET, SQLite, & PostgreSQL
+              </div>
+            </div>
+            <div class="links">
+              <a
+                class="card-link"
+                target="_blank"
+                href="https://github.com/Hadddock/Reactivities"
+              >
+                <img
+                  src="assets/svgs/github-card.svg"
+                  alt=""
+                  class="link-icon"
+                />
+                <div class="link-text">GitHub Repo</div>
+              </a>
+            </div>
+            <a
+              class="mobile-links"
+              target="_blank"
+              href="https://github.com/Hadddock/Reactivities"
+            >
+              <div class="card-link">
+                <img
+                  src="assets/svgs/github-card.svg"
+                  alt=""
+                  class="link-icon"
+                />
+                <div class="link-text">GitHub Repo</div>
+              </div>
+            </a>
+          </li>
 
-        <div class="wave-container">
-            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                <defs>
-                    <path id="gentle-wave"
-                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                </defs>
-                <g class="parallax">
-                    <use xlink:href="#gentle-wave" x="48" y="0" id="wave-one" />
-                    <use xlink:href="#gentle-wave" x="48" y="3" id="wave-two" />
-                    <use xlink:href="#gentle-wave" x="48" y="5" id="wave-three" />
-                    <use xlink:href="#gentle-wave" x="48" y="7" id="wave-four" />
-                </g>
-            </svg>
-        </div>
-
-        <div class="works" id="works">
-            Works
-        </div>
-
-        <div class="projects">
-            <ul class="cards">
-                <li class="card">
-                    <img src="assets/svgs/reactivities.svg" alt="Reactivities Icon" class="card-icon">
-                    <div class="card-title">Reactivities</div>
-                    <div class="card-description">Social Media Web App</div>
-                    <hr />
-                    <div class="card-body">
-                        <div>Reactivities is a social media web application featuring user login & registration, profile
-                            viewing & editing, image uploading, real-time chatting, infinite scrolling, user following,
-                            and a persistent integrated PostgreSQL database. An active deployment of Reactivities is
-                            accessible from its GitHub repository.
-                        </div>
-                        <div>Made With: React, TypeScript, C#, .NET, SQLite, & PostgreSQL</div>
-                    </div>
-                    <div class="links">
-                        <a class="card-link" target="_blank" href="https://github.com/Hadddock/Reactivities">
-                            <img src="assets/svgs/github-card.svg" alt="" class="link-icon">
-                            <div class="link-text">GitHub Repo</div>
-                        </a>
-                    </div>
-                    <a class="mobile-links" target="_blank" href="https://github.com/Hadddock/Reactivities">
-                        <div class="card-link">
-                            <img src="assets/svgs/github-card.svg" alt="" class="link-icon">
-                            <div class="link-text">GitHub Repo</div>
-                        </div>
-                    </a>
-                </li>
-                <li class="card">
-                    <img src="assets/svgs/synesthesia.svg" alt="Synesthesia Icon" class="card-icon">
-                    <div class="card-title">Synesthesia</div>
-                    <div class="card-description">Music Platformer Game</div>
-                    <hr />
-                    <div class="card-body">
-                        <div>
-                            Synesthesia is an abstract cat platformer featuring a dynamic audio system, syncing music
-                            with the player's movement in real-time. Synesthesia's visuals are a mix of traditional
-                            pixel art and PS1-inspired 3D backgrounds. Builds for HTML5, Windows, & macOS are available
-                            for free on Itch.io.
-                        </div>
-                        <div>Made With: Godot, GDScript, Photoshop, Illustrator, & Aseprite</div>
-                    </div>
-                    <div class="links">
-                        <a class="card-link" target="_blank" href="https://breather-games.itch.io/synesthesia">
-                            <img src="assets/svgs/itch-io.svg" alt="" class="link-icon">
-                            <div class="link-text">Play on Itch.io</div>
-                        </a>
-                    </div>
-                    <a class="mobile-links" target="_blank" href="https://breather-games.itch.io/synesthesia" id="itch">
-                        <div class="card-link">
-                            <img src="assets/svgs/itch-io.svg" alt="" class="link-icon">
-                            <div class="link-text">View on Itch.io</div>
-                        </div>
-                    </a>
-                </li>
-                <li class="card">
+          <!-- <li class="card">
                     <img src="assets/svgs/meedee.svg" alt="Meedee Icon" class="card-icon">
                     <div class="card-title">Meedee</div>
                     <div class="card-description">MIDI Platformer Game</div>
@@ -174,95 +272,140 @@
                             <div class="link-text">GitHub Repo</div>
                         </div>
                     </a>
-                </li>
+                </li> -->
 
-                <li class="card">
-                    <img src="assets/svgs/thisorthat.svg" alt="Thisorthat Icon" class="card-icon">
-                    <div class="card-title">Thisorthat</div>
-                    <div class="card-description">Trivia Maze Game</div>
-                    <hr />
-                    <div class="card-body">
-                        <div>
-                            Thisorthat is a trivia maze game developed for TCSS 308 Software Development by two
-                            classmates and I at University of
-                            Washington. The goal is to escape the
-                            labyrinthine halls of Ikea by correctly answering trivia questions. Each question gives a
-                            subject, and the possible answers are different groupings the subject may belong to.
-                        </div>
-                        <div>Made With: Java & Scrum Project Management Framework</div>
-                    </div>
-                    <div class="links">
-                        <a class="card-link" target="_blank" href="https://github.com/Hadddock/thisorthat">
-                            <img src="assets/svgs/github-card.svg" alt="" class="link-icon">
-                            <div class="link-text">GitHub Repo</div>
-                        </a>
-                    </div>
-
-                    <a class="mobile-links" target="_blank" href="https://github.com/Hadddock/thisorthat">
-                        <div class="card-link">
-                            <img src="assets/svgs/github-card.svg" alt="" class="link-icon">
-                            <div class="link-text">GitHub Repo</div>
-                        </div>
-                    </a>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="wave-container" id="wave-container-two">
-            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                <defs>
-                    <path id="gentle-wave"
-                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                </defs>
-                <g class="parallax">
-                    <use xlink:href="#gentle-wave" x="48" y="0" id="wave-one" />
-                    <use xlink:href="#gentle-wave" x="48" y="3" id="wave-two" />
-                    <use xlink:href="#gentle-wave" x="48" y="5" id="wave-three" />
-                    <use xlink:href="#gentle-wave" x="48" y="7" id="wave-four" />
-                </g>
-            </svg>
-        </div>
-
-        <div class="wave-container-two-background">
-
-        </div>
-
-        <div class="contact" id="contact">
-            Contact
-        </div>
-
-        <div class="contact-links">
-            <div class="contact-container">
-                <a class="contact-link" href="mailto:justin.haddock@outlook.com">
-                    <img src="assets/svgs/email-square.svg" alt="email icon" id="email-contact">
-                    <div>justin.haddock@outlook.com</div>
-                </a>
-                <a class="contact-link" target="_blank" href="https://www.linkedin.com/in/justinhaddock/">
-                    <img src="assets/svgs/linkedin-square.svg" alt="LinkedIn icon" id="linkedin-contact">
-                    <div>linkedin.com/in/justinhaddock</div>
-                </a>
-                <a class="contact-link" target="_blank" href="https://github.com/Hadddock">
-                    <img src="assets/svgs/github-square.svg" alt="GitHub icon" id="github-contact">
-                    <div>github.com/Hadddock</div>
-                </a>
-                <a class="contact-link" target="_blank"
-                    href="https://docs.google.com/document/d/1UyDVA0NUx5gX5Aq9u2-SjsnVTmBu2rQRJhViILbaRGQ/edit?usp=sharing">
-                    <img src="assets/svgs/resume-square.svg" alt="Resume icon" id="resume-contact">
-                    <div>Resume on Google Docs</div>
-                </a>
+          <li class="card">
+            <img
+              src="assets/svgs/thisorthat.svg"
+              alt="Thisorthat Icon"
+              class="card-icon"
+            />
+            <div class="card-title">Thisorthat</div>
+            <div class="card-description">Trivia Maze Game</div>
+            <hr />
+            <div class="card-body">
+              <div>
+                Thisorthat is a trivia maze game developed for TCSS 308 Software
+                Development by two classmates and I at University of Washington.
+                The goal is to escape the labyrinthine halls of Ikea by
+                correctly answering trivia questions. Each question gives a
+                subject, and the possible answers are different groupings the
+                subject may belong to.
+              </div>
+              <div>Made With: Java & Scrum Project Management Framework</div>
             </div>
-        </div>
-        <div>
+            <div class="links">
+              <a
+                class="card-link"
+                target="_blank"
+                href="https://github.com/Hadddock/thisorthat"
+              >
+                <img
+                  src="assets/svgs/github-card.svg"
+                  alt=""
+                  class="link-icon"
+                />
+                <div class="link-text">GitHub Repo</div>
+              </a>
+            </div>
 
-        </div>
+            <a
+              class="mobile-links"
+              target="_blank"
+              href="https://github.com/Hadddock/thisorthat"
+            >
+              <div class="card-link">
+                <img
+                  src="assets/svgs/github-card.svg"
+                  alt=""
+                  class="link-icon"
+                />
+                <div class="link-text">GitHub Repo</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
 
-        <footer class="footer">
-            © 2023 Justin Haddock
-        </footer>
+      <div class="wave-container" id="wave-container-two">
+        <svg
+          class="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shape-rendering="auto"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" id="wave-one" />
+            <use xlink:href="#gentle-wave" x="48" y="3" id="wave-two" />
+            <use xlink:href="#gentle-wave" x="48" y="5" id="wave-three" />
+            <use xlink:href="#gentle-wave" x="48" y="7" id="wave-four" />
+          </g>
+        </svg>
+      </div>
+
+      <div class="wave-container-two-background"></div>
+
+      <div class="contact" id="contact">Contact</div>
+
+      <div class="contact-links">
+        <div class="contact-container">
+          <a class="contact-link" href="mailto:justin.haddock@outlook.com">
+            <img
+              src="assets/svgs/email-square.svg"
+              alt="email icon"
+              id="email-contact"
+            />
+            <div>justin.haddock@outlook.com</div>
+          </a>
+          <a
+            class="contact-link"
+            target="_blank"
+            href="https://www.linkedin.com/in/justinhaddock/"
+          >
+            <img
+              src="assets/svgs/linkedin-square.svg"
+              alt="LinkedIn icon"
+              id="linkedin-contact"
+            />
+            <div>linkedin.com/in/justinhaddock</div>
+          </a>
+          <a
+            class="contact-link"
+            target="_blank"
+            href="https://github.com/Hadddock"
+          >
+            <img
+              src="assets/svgs/github-square.svg"
+              alt="GitHub icon"
+              id="github-contact"
+            />
+            <div>github.com/Hadddock</div>
+          </a>
+          <a
+            class="contact-link"
+            target="_blank"
+            href="https://docs.google.com/document/d/1UyDVA0NUx5gX5Aq9u2-SjsnVTmBu2rQRJhViILbaRGQ/edit?usp=sharing"
+          >
+            <img
+              src="assets/svgs/resume-square.svg"
+              alt="Resume icon"
+              id="resume-contact"
+            />
+            <div>Resume on Google Docs</div>
+          </a>
+        </div>
+      </div>
+      <div></div>
+
+      <footer class="footer">© 2023 Justin Haddock</footer>
     </div>
-
-</body>
-
+  </body>
 </html>

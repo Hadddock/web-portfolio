@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela&family=Varela+Round&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Varela&family=Varela+Round&display=swap");
 
 :root {
   --wave-one-color: rgba(249, 243, 230, 0.456);
@@ -16,15 +16,16 @@
 
 html,
 body {
-
   margin: 0;
 
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
-  background-image: linear-gradient(var(--hero-background-color) 50%, var(--contact-background-color) 50%);
+  background-image: linear-gradient(
+    var(--hero-background-color) 50%,
+    var(--contact-background-color) 50%
+  );
 }
-
 
 header {
   overflow: hidden;
@@ -45,7 +46,7 @@ header img {
   width: 45px;
 }
 
-header>ul {
+header > ul {
   gap: 40px;
 }
 
@@ -60,7 +61,6 @@ ul {
 }
 
 li {
-
   list-style: none;
 }
 
@@ -74,11 +74,10 @@ a {
   display: grid;
   /*                  |he   |wav  |work |proj |wav  |con  |co-l  */
   grid-template-rows: 550px 200px 100px 1fr 330px 100px 805px 160px 80px;
-
 }
 
 .hero {
-  font-family: 'Varela', sans-serif;
+  font-family: "Varela", sans-serif;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -87,7 +86,6 @@ a {
 
   gap: 10px;
   background-color: transparent;
-
 }
 
 .hero-text {
@@ -106,7 +104,6 @@ a {
 .wave-container {
   background-color: transparent;
   align-self: end;
-
 }
 
 #wave-container-two {
@@ -119,11 +116,10 @@ a {
 
 .wave-container-two-background {
   grid-area: 5 /1 / 6 /2;
-  background-color: var(--contact-background-color)
+  background-color: var(--contact-background-color);
 }
 
 .waves {
-
   position: relative;
   min-height: 100px;
   max-height: 200px;
@@ -149,26 +145,26 @@ a {
   fill: var(--works-background-color);
 }
 
-.parallax>use {
-  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
 
-.parallax>use:nth-child(1) {
+.parallax > use:nth-child(1) {
   animation-delay: -2s;
   animation-duration: 7s;
 }
 
-.parallax>use:nth-child(2) {
+.parallax > use:nth-child(2) {
   animation-delay: -3s;
   animation-duration: 10s;
 }
 
-.parallax>use:nth-child(3) {
+.parallax > use:nth-child(3) {
   animation-delay: -4s;
   animation-duration: 13s;
 }
 
-.parallax>use:nth-child(4) {
+.parallax > use:nth-child(4) {
   animation-delay: -5s;
   animation-duration: 20s;
 }
@@ -188,12 +184,11 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Varela', sans-serif;
+  font-family: "Varela", sans-serif;
   font-size: 2em;
   font-weight: bold;
   background-color: var(--works-background-color);
 }
-
 
 .projects {
   background-color: var(--works-background-color);
@@ -212,11 +207,11 @@ a {
 }
 
 .card {
-
   justify-content: center;
   box-sizing: border-box;
   justify-self: center;
-  height: 400px;
+  min-height: 485px;
+  max-height: 900px;
   width: 70%;
   max-width: 850px;
   min-width: 605px;
@@ -224,8 +219,8 @@ a {
   background-color: rgb(235, 235, 235);
 
   display: grid;
-  grid-template-columns: .75fr 3fr 3fr;
-  grid-template-rows: .75fr  .75fr .3fr 3fr 1fr;
+  grid-template-columns: 0.75fr 3fr 3fr;
+  grid-template-rows: 0.75fr 0.75fr 0.3fr 3fr 1fr;
   padding: 20px;
 
   column-gap: 20px;
@@ -235,7 +230,6 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.47);
   transition: all 0.3s ease-out;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-
 }
 
 hr {
@@ -244,9 +238,8 @@ hr {
 
 .card:hover {
   transform: none;
-  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px var(--box-shadow-color);
-
-
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+    0 24px 46px var(--box-shadow-color);
 }
 
 .card-icon {
@@ -255,22 +248,21 @@ hr {
   max-width: 80px;
   width: clamp(30px, 60px, 80px);
   width: 100%;
-
 }
 
 .card-body {
   grid-area: 4/ 1/ 6/4;
-  font-size: min(1.5em,calc(15px + 0.390625vw));
-  display:grid;
-  gap:10px;
-  grid-template-rows:5fr 1fr;
-  flex-direction:column;
+  font-size: min(1.5em, calc(15px + 0.390625vw));
+  display: grid;
 
+  gap: 10px;
+  grid-template-rows: 5fr 1fr;
+  flex-direction: column;
 }
 
 .card-body div:last-child {
   justify-self: bottom;
-} 
+}
 
 .card-title {
   font-weight: bold;
@@ -279,10 +271,9 @@ hr {
 }
 
 .card-description {
-
   font-size: 1.6em;
   align-self: start;
-  grid-area: 2/ 2/3 / 3
+  grid-area: 2/ 2/3 / 3;
 }
 
 .links {
@@ -298,20 +289,15 @@ hr {
 }
 
 .card-link {
-
   display: flex;
   justify-content: start;
   gap: 10px;
   align-items: center;
   white-space: nowrap;
-  font-size: min(1.5em,calc(13.4px + 0.390625vw));
- 
+  font-size: min(1.5em, calc(13.4px + 0.390625vw));
 }
 
-
-
 .card-list {
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -319,22 +305,21 @@ hr {
 
 .card-icon {
   max-width: 80px;
-  width:80px;
-  height:80px;
+  width: 80px;
+  height: 80px;
   align-self: center;
   justify-self: center;
 }
 
-
 .link-icon {
   max-height: 75px;
-  height:75px;
-  width:75px;
+  height: 75px;
+  width: 75px;
 }
 
 .link-text {
   font-size: 1.3em;
-  text-decoration: underline
+  text-decoration: underline;
 }
 
 .contact {
@@ -346,9 +331,8 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-self: center;
- 
-  gap:50px;
 
+  gap: 50px;
 }
 
 .contact-links {
@@ -368,22 +352,20 @@ hr {
   justify-content: start;
   white-space: nowrap;
   text-decoration: underline;
-
 }
 
-.contact-link>img {
-  width:90px;
-  height:90px;
-  max-height: 105px;
+.contact-link > img {
+  width: 90px;
+  height: 90px;
+  max-height: 90px;
   transition: all 0.4s ease-in;
   filter: brightness(0%);
 }
 .contact-link > img::selection {
-  filter:brightness(100%);
+  filter: brightness(100%);
 }
 
-
-.contact-link>img:hover {
+.contact-link > img:hover {
   transition: all 0.4s ease-out;
   filter: brightness(95%);
 }
@@ -408,16 +390,14 @@ hr {
 
 .ham > img {
   width: 29px;
-  height:25px;
+  height: 25px;
 }
-
-
 
 .nav-sub {
   overflow: hidden;
   position: fixed;
   transform: translateX(100%);
-  transition: transform .9s;
+  transition: transform 0.9s;
   z-index: 1;
   background: rgba(0, 0, 0, 0.767);
   height: 550px;
@@ -433,7 +413,6 @@ hr {
 
   padding: 0px 20px 20px 20px;
   border-bottom-left-radius: 15px;
-
 }
 
 .spacer {
@@ -446,29 +425,25 @@ hr {
 
   width: 100%;
   white-space: nowrap;
-
 }
 
 .nav-change {
   transform: translateX(0%);
   transition: transform 0.3s;
-
 }
 
 .dropdown {
   display: none;
   justify-content: flex-end;
   font-size: 1em;
-
 }
 
 .dropdown img {
-
   height: 25px;
 }
 .header-icon {
-  width:45px;
-  height:45px;
+  width: 45px;
+  height: 45px;
 }
 
 button {
@@ -484,26 +459,20 @@ button {
   display: none;
 }
 
-@media screen and (max-height:550px) and (orientation: landscape) {
+@media screen and (max-height: 550px) and (orientation: landscape) {
   header {
     display: none;
   }
-
 }
 
-@media screen and (max-width:700px) {
-
- 
-
+@media screen and (max-width: 700px) {
   .container {
     /*                  |he   |wav  |work |proj |wav  |con  |co-l  */
     grid-template-rows: 330px 50px 100px 1fr 90px 100px 605px 50px;
-
   }
 
   .contact-link {
     justify-content: center;
-
   }
 
   .contact-links {
@@ -517,7 +486,6 @@ button {
   }
 
   .hero-text {
-
     font-size: 2em;
     width: auto;
     height: auto;
@@ -527,36 +495,30 @@ button {
     font-size: 1.5em;
   }
   hr {
-    grid-area: 3/1/4/4
+    grid-area: 3/1/4/4;
   }
 
   .card {
-    min-width: 300px;
-    grid-template-rows: .75fr .1fr .1fr 3fr .1fr .2fr;
-    height: 530px;
+    min-width: 80vw;
+
+    grid-template-rows: 0.75fr 0.1fr 0.1fr 3fr 0.1fr 0.2fr;
   }
 
-
   .card-icon {
-
-    padding: 0px 20px 10px 10px;
+    padding: 0px 20px 20px 0px;
     grid-area: 1/ 1/ 2/2;
     max-width: 60px;
-
   }
 
   .card-link {
     justify-content: center;
     display: flex;
     white-space: normal;
-    font-weight:bold;
-   
-
-
+    font-weight: bold;
   }
 
   .link-text {
-    font-size: 1.0em;
+    font-size: 1em;
     white-space: nowrap;
   }
 
@@ -568,11 +530,10 @@ button {
   }
 
   .link-icon {
-      width:50px;
-      height:50px;
-      padding:5px;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
   }
-
 
   .card-title {
     text-align: center;
@@ -588,6 +549,7 @@ button {
 
   .card-body {
     font-size: calc(14.5px + 0.390625vw);
+
     grid-area: 4/ 1/ 5/4;
   }
 
@@ -595,15 +557,21 @@ button {
     justify-content: start;
     font-size: 1.3em;
     gap: 10px;
-
   }
 
   .contact-link img {
     width: 40px;
   }
 
-  footer {
+  .contact-container {
+    gap: 10px;
+  }
 
+  .contact-links {
+    margin-bottom: 0px;
+  }
+
+  footer {
     font-size: 1em;
     grid-area: 9 /1/10/2;
   }
@@ -611,16 +579,14 @@ button {
   .waves {
     height: 60px;
     min-height: 60px;
-
   }
 
   .wave-container {
-    overflow-y: hidden
+    overflow-y: hidden;
   }
 
   .dropdown {
     display: flex;
-
 
     z-index: 2;
   }
@@ -633,31 +599,31 @@ button {
     justify-content: space-around;
     align-items: center;
     border-radius: 16px;
-    
+
     font-size: 1.25em;
   }
 
-  .mobile-links#itch {
-    background:rgba(243, 182, 182, 0.498);
+  .mobile-links.itch {
+    background: rgba(243, 182, 182, 0.498);
+  }
+  .mobile-links.website {
+    background: rgba(182, 243, 231, 0.498);
   }
 
   a.card-link {
     display: none;
   }
-
 }
 
-@media screen and (max-width:340px) {
+@media screen and (max-width: 340px) {
   .contact-link {
     font-size: 1em;
     flex-direction: column;
-
   }
 }
 
 @media (hover: none) {
-  .contact-link>img:hover {
+  .contact-link > img:hover {
     filter: brightness(0%);
   }
-
 }
