@@ -78,6 +78,10 @@ a {
   position: relative;
 }
 
+.hero-hr {
+  margin-top: -8px;
+}
+
 .header-link:after {
   content: "";
   position: absolute;
@@ -99,7 +103,7 @@ a {
 .container {
   display: grid;
   /*                  |he   |wav  |work |proj |wav  |con  |co-l  */
-  grid-template-rows: 550px 200px 100px 1fr 330px 100px 805px 0px 60px;
+  grid-template-rows: 550px 200px 100px 1fr 200px 100px 705px 0px 60px;
 }
 
 .hero {
@@ -117,18 +121,22 @@ a {
 .hero-text {
   font-size: 3em;
   font-weight: bold;
+
   /* background-color: rgba(236, 47, 47, 0.617); */
 }
 
 .hero-subtext {
   padding: 0px 5px 0px 5px;
   font-size: 2em;
+  margin-left: 10px;
+  margin-right: 10px;
   /* color: hsl(88, 54%, 70%); */
   /* background-color: rgb(207, 255, 231); */
 }
 
 .hero-message {
   font-size: 1.5em;
+  margin-top: -15px;
 }
 
 .wave-container {
@@ -498,7 +506,21 @@ button {
 @media screen and (max-width: 700px) {
   .container {
     /*                  |he   |wav  |work |proj |wav  |con  |co-l  */
-    grid-template-rows: 330px 50px 100px 1fr 90px 100px 605px 50px;
+    grid-template-rows: 330px 50px 100px 1fr 90px 70px 505px 0px;
+  }
+
+  .hero-hr {
+    height: 2px;
+    background-color: rgb(216, 216, 216);
+    margin-right: 10vw;
+    margin-left: 10vw;
+
+    border-radius: 10px;
+  }
+
+  .hero-message {
+    margin-top: -20px;
+    font-size: 1em;
   }
 
   .contact-link {
