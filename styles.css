@@ -603,6 +603,10 @@ button {
     font-size: 1.25em;
   }
 
+  .mobile-links.lange {
+    background: rgba(182, 243, 231, 0.498);
+  }
+
   .mobile-links.itch {
     background: rgba(243, 182, 182, 0.498);
   }
