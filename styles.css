@@ -73,7 +73,8 @@ a {
   text-decoration: none;
 }
 
-.header-link {
+.header-link,
+.contact-link-text {
   display: inline-block;
   position: relative;
 }
@@ -82,7 +83,8 @@ a {
   margin-top: -8px;
 }
 
-.header-link:after {
+.header-link:after,
+.contact-link-text:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -95,7 +97,8 @@ a {
   transition: transform 0.25s ease-out;
 }
 
-.header-link:hover:after {
+.header-link:hover:after,
+.contact-link:hover > .contact-link-text:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -392,7 +395,7 @@ hr {
 /* CSS */
 .card-link {
   appearance: button;
-  height: 90%;
+  height: 95%;
   background-color: transparent;
 
   border: 0 solid #e5e7eb;
@@ -418,6 +421,7 @@ hr {
   -webkit-user-select: none;
   touch-action: manipulation;
   align-content: center;
+
   justify-content: center;
   display: flex;
   box-shadow: -6px 8px 10px rgba(81, 41, 10, 0.176),
@@ -502,23 +506,18 @@ hr {
   gap: 20px;
   justify-content: start;
   white-space: nowrap;
-  text-decoration: underline;
 }
 
-.contact-link > img {
+.contact-link-image {
   width: 90px;
   height: 90px;
   max-height: 90px;
-  transition: all 0.4s ease-in;
-  filter: brightness(0%);
-}
-.contact-link > img::selection {
-  filter: brightness(100%);
+  transition: all 0.2s ease-in;
+  transition: all 0.2s ease-out;
 }
 
-.contact-link > img:hover {
-  transition: all 0.4s ease-out;
-  filter: brightness(95%);
+.contact-link:hover > .contact-link-image {
+  fill: #0072c6;
 }
 
 .footer {
@@ -682,7 +681,9 @@ button {
 
   .card-icon {
     padding: 0px 20px 20px 0px;
-    grid-area: 1/ 1/ 2/2;
+    grid-area: 1/ 1/ 2/5;
+    margin-bottom: 10px;
+    justify-self: center;
     max-width: 60px;
   }
 
@@ -731,13 +732,18 @@ button {
     grid-area: 4/ 1/ 5/4;
   }
 
+  .contact-link-text:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
   .contact-link {
     justify-content: start;
     font-size: 1.3em;
     gap: 10px;
   }
 
-  .contact-link img {
+  .contact-link-image {
     width: 40px;
   }
 
@@ -803,13 +809,6 @@ button {
   .contact-link {
     font-size: 1em;
     flex-direction: column;
-  }
-
-  .card-icon {
-    padding: 0px;
-    grid-area: 1 /1 / 3 / -1;
-    margin-bottom: 60px;
-    justify-content: center;
   }
 
   .link-text {
