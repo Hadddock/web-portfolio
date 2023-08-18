@@ -125,9 +125,9 @@ a {
 }
 
 .flower {
-  margin-top: 10px;
+  margin-top: 70px;
   grid-area: 1/ 1/ 2 /2;
-  height: 800px;
+  height: 100%;
   width: 600px;
   z-index: 0;
   /* background-color: black; */
@@ -138,8 +138,8 @@ a {
   grid-template-columns: 1fr;
   justify-content: center;
 
-  margin-right: 2.5vw;
-  opacity: 50%;
+  margin-right: 2vw;
+  opacity: 60%;
 }
 /* 
 @media screen and (max-width: 1800px) {
@@ -365,6 +365,8 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.47);
   transition: all 0.3s ease-out;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+  outline: 1px solid rgba(0, 0, 0, 0.451);
 }
 
 hr {
