@@ -144,7 +144,7 @@ a {
 
 .mobile-flowers {
   margin-top: 70px;
-  display: grid;
+
   grid-area: 1/ 1/ 2 /2;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
