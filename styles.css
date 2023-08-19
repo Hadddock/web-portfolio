@@ -948,3 +948,10 @@ button {
     filter: brightness(0%);
   }
 }
+
+@media screen and (min-width: 2560px) {
+  .flower {
+    justify-self: center;
+    margin-left: 1890px;
+  }
+}
