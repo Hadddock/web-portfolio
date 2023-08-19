@@ -168,14 +168,14 @@ a {
 }
 
 .mobile-flower-gear {
-  scale: 38%;
+  scale: 45%;
   animation: rotation 25s infinite linear;
 }
 
 .mobile-flower-gear2 {
-  scale: 38%;
+  scale: 45%;
   animation-direction: reverse;
-  animation: rotation 25s infinite linear;
+  animation: rotation2 25s infinite linear;
 }
 
 @media screen and (max-width: 1850px) {
@@ -227,6 +227,15 @@ a {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation2 {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
   }
 }
 
@@ -914,6 +923,12 @@ button {
   .link-text {
     font-size: 1em;
     white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .mobile-flowers {
+    display: none;
   }
 }
 
