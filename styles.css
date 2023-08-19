@@ -142,6 +142,42 @@ a {
   opacity: 60%;
 }
 
+.mobile-flowers {
+  margin-top: 70px;
+  display: grid;
+  grid-area: 1/ 1/ 2 /2;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  display: none;
+}
+
+.mobile-flower {
+  height: 20%;
+  width: 110px;
+  z-index: 0;
+  margin-top: 145px;
+
+  justify-self: center;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  justify-content: center;
+
+  opacity: 60%;
+}
+
+.mobile-flower-gear {
+  scale: 38%;
+  animation: rotation 25s infinite linear;
+}
+
+.mobile-flower-gear2 {
+  scale: 38%;
+  animation-direction: reverse;
+  animation: rotation 25s infinite linear;
+}
+
 @media screen and (max-width: 1850px) {
   .flower {
     justify-self: center;
@@ -172,6 +208,10 @@ a {
   /* width: 300px;
   height: 300px; */
   /* animation: rotation 35s infinite linear; */
+}
+
+.mobile-flower-part {
+  grid-area: 1/1/ -1/-1;
 }
 
 .flower-gear {
@@ -667,9 +707,19 @@ button {
     grid-template-rows: 330px 50px 100px 1fr 90px 70px 505px 0px;
   }
 
+  .hero {
+    margin-top: -30px;
+  }
+
+  .mobile-flowers {
+    display: grid;
+  }
+
   .flower {
+    display: none;
     overflow: hidden;
     height: 500px;
+    width: 200x;
     margin-top: 0px;
     width: 100%;
     opacity: 10%;
