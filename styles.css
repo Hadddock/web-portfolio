@@ -537,8 +537,12 @@ hr {
   transform: translateY(0.125rem);
 }
 
-.card-link.lange-card-link:hover {
+.card-link:hover {
   outline: 4px solid rgb(65, 223, 255);
+}
+
+.card-link:focus {
+  outline: 4px solid rgb(0, 0, 0);
 }
 .card-link.reactivities-card-link:hover {
   outline: 4px solid rgb(65, 223, 255);
