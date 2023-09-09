@@ -403,7 +403,7 @@ a {
   transition: all 0.3s ease-out;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 
-  outline: 1px solid rgba(0, 0, 0, 0.451);
+  outline: 3px solid rgb(233, 233, 233);
 }
 
 hr {
@@ -491,7 +491,7 @@ hr {
 }
 
 .card-link.thisorthat-card-link {
-  background-color: rgb(236, 185, 250);
+  background-color: rgb(251, 204, 167);
 }
 
 /* CSS */
@@ -553,7 +553,7 @@ hr {
 }
 
 .card-link.thisorthat-card-link:hover {
-  outline: 4px solid rgb(144, 53, 187);
+  outline: 4px solid rgb(255, 123, 0);
 }
 
 .card-list {
