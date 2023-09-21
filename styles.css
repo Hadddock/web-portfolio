@@ -479,19 +479,19 @@ hr {
 } */
 
 .card-link.lange-card-link {
-  background-color: rgb(163, 255, 255);
+  background-color: rgba(163, 255, 255, 0.398);
 }
 
 .card-link.reactivities-card-link {
-  background-color: rgb(163, 255, 255);
+  background-color: rgba(163, 255, 255, 0.46);
 }
 
 .card-link.synesthesia-card-link {
-  background-color: rgb(252, 197, 197);
+  background-color: rgba(252, 197, 197, 0.455);
 }
 
 .card-link.thisorthat-card-link {
-  background-color: rgb(251, 204, 167);
+  background-color: rgba(251, 203, 167, 0.511);
 }
 
 /* CSS */
